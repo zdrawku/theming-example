@@ -1,26 +1,38 @@
-/* Gruvbox Dark Theme */
-// Standard CSS normalize, comment out if not required or using a different module
+/* Gruvbox Theme — Light default, Dark via .dark-theme class */
 @use "minireset.css/minireset";
 @use "igniteui-angular/theming" as *;
 
 @include core();
 @include typography();
 
-// Gruvbox Dark Palette
-$gruvbox-dark-palette: palette($primary: #458588, // Gruvbox blue
-    $secondary: #d79921, // Gruvbox yellow
-    $surface: #282828, // Gruvbox bg
-    $info: #458588, // Gruvbox blue
-    $success: #98971a, // Gruvbox green
-    $warn: #d79921, // Gruvbox yellow
-    $error: #cc241d // Gruvbox red
-  );
+// ── Gruvbox Light (default) ──
+$gruvbox-light-palette: palette($primary: #076678, // Gruvbox dark blue
+    $secondary: #b57614, // Gruvbox dark yellow
+    $surface: #fbf1c7, // Gruvbox light bg
+    $info: #076678,
+    $success: #79740e, // Gruvbox dark green
+    $warn: #b57614,
+    $error: #cc241d);
 
-@include theme($palette: $gruvbox-dark-palette, $schema: $dark-material-schema);
+@include theme($palette: $gruvbox-light-palette, $schema: $light-material-schema);
+
+// ── Gruvbox Dark (activated via .dark-theme on <body>) ──
+.dark-theme {
+  $gruvbox-dark-palette: palette($primary: #458588, // Gruvbox blue
+      $secondary: #d79921, // Gruvbox yellow
+      $surface: #282828, // Gruvbox dark bg
+      $info: #458588,
+      $success: #98971a, // Gruvbox green
+      $warn: #d79921,
+      $error: #cc241d);
+
+  @include theme($palette: $gruvbox-dark-palette, $schema: $dark-material-schema);
+}
 
 body {
   background: var(--ig-surface-500);
   color: var(--ig-surface-500-contrast);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 html,

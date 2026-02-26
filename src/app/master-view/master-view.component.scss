@@ -7,9 +7,11 @@
   align-content: flex-start;
   overflow: hidden;
 }
+
 .row-layout {
   display: flex;
 }
+
 .header {
   background-color: var(--ig-success-500);
   justify-content: flex-start;
@@ -22,6 +24,7 @@
   max-height: 60px;
   flex-shrink: 0;
 }
+
 .group {
   justify-content: flex-start;
   align-items: center;
@@ -31,12 +34,14 @@
   min-height: 50px;
   flex-grow: 1;
 }
+
 .group_1 {
   justify-content: flex-start;
   align-items: center;
   align-content: flex-start;
   position: relative;
 }
+
 .group_2 {
   justify-content: flex-start;
   align-items: stretch;
@@ -46,6 +51,7 @@
   min-height: 50px;
   flex-grow: 1;
 }
+
 .group_3 {
   justify-content: flex-start;
   align-items: stretch;
@@ -54,10 +60,12 @@
   min-width: 50px;
   min-height: 50px;
 }
+
 .column-layout {
   display: flex;
   flex-direction: column;
 }
+
 .group_4 {
   justify-content: flex-start;
   align-items: stretch;
@@ -66,6 +74,7 @@
   min-width: 640px;
   min-height: 50px;
 }
+
 .group_5 {
   justify-content: flex-start;
   align-items: center;
@@ -73,6 +82,7 @@
   gap: 8px;
   min-width: 50px;
 }
+
 .group_6 {
   flex-wrap: wrap;
   justify-content: space-between;
@@ -80,6 +90,7 @@
   align-content: flex-start;
   gap: 24px;
 }
+
 .group_7 {
   justify-content: flex-start;
   align-items: center;
@@ -88,6 +99,7 @@
   position: relative;
   min-width: 50px;
 }
+
 .group_8 {
   justify-content: flex-end;
   align-items: center;
@@ -95,6 +107,7 @@
   gap: 16px;
   padding: 16px 0 12px;
 }
+
 .image {
   object-fit: cover;
   margin: 0 8px 0 0;
@@ -104,37 +117,45 @@
   max-width: 26px;
   flex-shrink: 0;
 }
+
 .icon {
   color: #222222;
 }
+
 .icon_1 {
   color: var(--ig-gray-900);
 }
+
 .avatar {
   --ig-avatar-background: transparent;
 }
+
 .icon_2 {
   --size: 24px;
   font-size: 24px;
   width: 24px;
   height: 24px;
 }
+
 .icon_3 {
   --size: 18px;
   font-size: 18px;
   width: 18px;
   height: 18px;
 }
+
 .text {
   height: max-content;
   min-width: min-content;
 }
+
 .button {
   --foreground: #222222;
   --ig-size: var(--ig-size-medium);
   height: max-content;
   flex-shrink: 0;
 }
+
 .project-dropdown {
   left: 35px;
   top: 0;
@@ -145,6 +166,7 @@
   max-width: 222px;
   flex-shrink: 0;
 }
+
 .button_1 {
   --foreground: var(--ig-gray-900);
   --background: var(--ig-surface-500);
@@ -153,10 +175,12 @@
   height: max-content;
   flex-shrink: 0;
 }
+
 .icon-button {
   --foreground: #222222;
   margin: 0 8px 0 0;
 }
+
 .profile-drop-down {
   left: 0;
   top: 0;
@@ -164,21 +188,25 @@
   height: max-content;
   min-width: min-content;
 }
+
 .user-input {
   height: max-content;
   min-width: min-content;
 }
+
 .button_2 {
   --ig-size: var(--ig-size-medium);
   height: max-content;
   flex-shrink: 0;
 }
+
 .nav-drawer {
   min-width: min-content;
   min-height: 0;
   max-width: min-content;
   flex-shrink: 0;
 }
+
 .view-container {
   overflow: auto;
   position: relative;
@@ -187,10 +215,26 @@
   flex-grow: 1;
   flex-basis: 0;
 }
+
 .new-task-dialog {
   position: absolute;
 }
+
 .badge {
   width: max-content;
   height: max-content;
+}
+
+.theme-toggle {
+  align-items: center;
+  gap: 4px;
+  margin: 0 16px 0 0;
+}
+
+.icon_theme {
+  --size: 20px;
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  color: var(--ig-surface-500-contrast);
 }

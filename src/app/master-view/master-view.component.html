@@ -38,6 +38,10 @@
     </igx-drop-down>
   </div>
   <div class="row-layout group_1">
+    <div class="row-layout theme-toggle">
+      <igx-icon class="icon_theme">{{ themeService.isDark() ? 'light_mode' : 'dark_mode' }}</igx-icon>
+      <igx-switch [checked]="themeService.isDark()" (change)="themeService.toggle()"></igx-switch>
+    </div>
     <button igxButton="contained" type="button" (click)="newTaskDialog.toggle()" class="button_1">
       <igx-icon class="icon_1">
         add
