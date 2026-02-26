@@ -4,7 +4,7 @@ import { PageNotFoundComponent } from './error-routing/not-found/not-found.compo
 import { UncaughtErrorComponent } from './error-routing/error/uncaught-error.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '', redirectTo: 'master-view', pathMatch: 'full' },
   { path: 'error', component: UncaughtErrorComponent },
   { path: 'login', loadChildren: () => import('./login/login.routes').then(m => m.routes), data: { text: 'Login' } },
   { path: 'master-view', loadChildren: () => import('./master-view/master-view.routes').then(m => m.routes), data: { text: 'Master-View' } },

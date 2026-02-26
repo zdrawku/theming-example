@@ -5,10 +5,12 @@
   align-items: stretch;
   align-content: flex-start;
 }
+
 .column-layout {
   display: flex;
   flex-direction: column;
 }
+
 .left-nav {
   background-color: transparent;
   justify-content: flex-start;
@@ -23,9 +25,11 @@
   max-width: 260px;
   flex-shrink: 0;
 }
+
 .row-layout {
   display: flex;
 }
+
 .right-container {
   background-color: rgba(96, 96, 96, 0.1);
   justify-content: flex-start;
@@ -39,6 +43,7 @@
   flex-grow: 1;
   flex-basis: 0;
 }
+
 .content {
   justify-content: flex-start;
   align-items: stretch;
@@ -50,6 +55,7 @@
   flex-grow: 1;
   flex-basis: 0;
 }
+
 .content-toolbar {
   justify-content: flex-start;
   align-items: center;
@@ -59,6 +65,7 @@
   min-width: 50px;
   flex-shrink: 0;
 }
+
 .group {
   justify-content: flex-start;
   align-items: stretch;
@@ -68,6 +75,7 @@
   padding: 0 0 0 8px;
   min-width: 50px;
 }
+
 .filters {
   background-color: transparent;
   justify-content: flex-start;
@@ -77,6 +85,7 @@
   overflow: hidden;
   position: relative;
 }
+
 .group_1 {
   justify-content: flex-start;
   align-items: center;
@@ -87,6 +96,7 @@
   flex-grow: 1;
   flex-basis: 0;
 }
+
 .group_2 {
   justify-content: flex-end;
   align-items: center;
@@ -95,52 +105,65 @@
   overflow: hidden;
   position: relative;
 }
+
 .tabs {
   min-width: 0;
   min-height: 0;
   flex-grow: 1;
   flex-basis: 0;
 }
+
 .tab-item {
   min-width: 100%;
 }
+
 .h6 {
   height: max-content;
   min-width: min-content;
 }
+
 .avatar {
   --ig-size: var(--ig-size-small);
-  --igx-avatar-background: var(--ig-error-500);
+  --ig-avatar-background: var(--ig-error-500);
 }
+
 .icon {
   color: var(--ig-surface-500);
 }
+
 .avatar_1 {
   --ig-size: var(--ig-size-small);
-  --igx-avatar-background: var(--ig-success-500);
+  --ig-avatar-background: var(--ig-success-500);
 }
+
 .avatar_2 {
   --ig-size: var(--ig-size-small);
-  --igx-avatar-background: var(--ig-warn-500);
+  --ig-avatar-background: var(--ig-warn-500);
 }
+
 .h5 {
   height: max-content;
   min-width: min-content;
   flex-grow: 1;
   flex-shrink: 0;
 }
+
 .icon_1 {
   color: var(--ig-gray-600);
 }
+
 .avatar::part(base) {
-  --igx-avatar-color: var(--ig-surface-500);
+  --ig-avatar-color: var(--ig-surface-500);
 }
+
 .avatar_1::part(base) {
-  --igx-avatar-color: var(--ig-surface-500);
+  --ig-avatar-color: var(--ig-surface-500);
 }
+
 .avatar_2::part(base) {
-  --igx-avatar-color: var(--ig-surface-500);
+  --ig-avatar-color: var(--ig-surface-500);
 }
+
 .tab-item-content {
   justify-content: flex-start;
   align-items: stretch;
@@ -150,10 +173,12 @@
   min-height: 50px;
   max-height: 100%;
 }
+
 .list {
   height: max-content;
   min-width: min-content;
 }
+
 .grid {
   --ig-size: var(--ig-size-medium);
   min-width: 50px;
@@ -161,6 +186,7 @@
   flex-grow: 1;
   flex-basis: 0;
 }
+
 .grid_1 {
   --ig-size: var(--ig-size-medium);
   min-width: 600px;
@@ -168,19 +194,23 @@
   flex-grow: 1;
   flex-basis: 0;
 }
+
 .button {
   --ig-size: var(--ig-size-medium);
   width: max-content;
   height: max-content;
 }
+
 .button_1 {
   --ig-size: var(--ig-size-medium);
   height: max-content;
   flex-shrink: 0;
 }
+
 .icon-button {
   --foreground: var(--ig-gray-600);
 }
+
 .input {
   height: max-content;
   min-width: 200px;
@@ -188,6 +218,7 @@
   flex-grow: 1;
   flex-basis: 0;
 }
+
 .icon-button_1 {
   margin: 0 8px 0 0;
 }

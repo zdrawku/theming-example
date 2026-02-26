@@ -1,4 +1,4 @@
-# Theming Example
+# Team Collaboration (3)
 
 This project was generated with [App Builder Code Gen](https://www.appbuilder.dev/platform).
 

@@ -1,32 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
-// Standard CSS normalize, comment out if not required or using a different module
+/* Gruvbox Theme — Light default, Dark via .dark-theme class */
 @use "minireset.css/minireset";
 @use "igniteui-angular/theming" as *;
 
 @include core();
 @include typography();
 
-$custom-palette: palette(
-  $primary: #09f,
-  $secondary: #72da67,
-  $surface: #222222);
-@include theme($palette: $custom-palette, $schema: $dark-material-schema);
+// ── Gruvbox Light (default) ──
+$gruvbox-light-palette: palette($primary: #076678, // Gruvbox dark blue
+    $secondary: #b57614, // Gruvbox dark yellow
+    $surface: #fbf1c7, // Gruvbox light bg
+    $info: #076678,
+    $success: #79740e, // Gruvbox dark green
+    $warn: #b57614,
+    $error: #cc241d);
+
+@include theme($palette: $gruvbox-light-palette, $schema: $light-material-schema);
+
+// ── Gruvbox Dark (activated via .dark-theme on <body>) ──
+.dark-theme {
+  $gruvbox-dark-palette: palette($primary: #458588, // Gruvbox blue
+      $secondary: #d79921, // Gruvbox yellow
+      $surface: #282828, // Gruvbox dark bg
+      $info: #458588,
+      $success: #98971a, // Gruvbox green
+      $warn: #d79921,
+      $error: #cc241d);
+
+  @include theme($palette: $gruvbox-dark-palette, $schema: $dark-material-schema);
+}
 
 body {
   background: var(--ig-surface-500);
   color: var(--ig-surface-500-contrast);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 .ig-typography {
-  h1, h2, h3, h4, h5, h6, p, .ig-typography__body-1 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  .ig-typography__body-1 {
     margin: 0;
   }
 }
 
-.outer-wrapper > *:not(router-outlet) {
+.outer-wrapper>*:not(router-outlet) {
   width: 100%;
 }
