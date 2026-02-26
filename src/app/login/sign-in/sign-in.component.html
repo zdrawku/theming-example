@@ -1,0 +1,53 @@
+<div class="row-layout left">
+  <div class="column-layout group">
+    <div class="row-layout group_1">
+      <img src="/assets/slingshot-icon.svg" alt="" class="image" />
+      <p class="ig-typography__subtitle-2 text">
+        TEAM COLLABORATION
+      </p>
+    </div>
+    <h5 class="h5">
+      Sign in
+    </h5>
+    <div class="row-layout group_2">
+      <button igxButton="contained" type="button" class="button">
+        <igx-icon>
+          donut_small
+        </igx-icon>
+        <span>Google</span>
+      </button>
+      <button igxButton="contained" type="button" class="button">
+        <igx-icon>
+          dashboard
+        </igx-icon>
+        <span>Microsoft</span>
+      </button>
+      <button igxButton="contained" type="button" class="button">
+        <igx-icon>
+          copyright
+        </igx-icon>
+        <span>Apple</span>
+      </button>
+    </div>
+    <igx-input-group type="border" class="input">
+      <input type="text" [(ngModel)]="value" igxInput />
+      <label igxLabel>Email / username</label>
+    </igx-input-group>
+    <igx-input-group type="border" class="input">
+      <input type="password" [(ngModel)]="value1" igxInput />
+      <label igxLabel>Password</label>
+    </igx-input-group>
+    <igx-checkbox labelPosition="after" [(ngModel)]="checked" class="checkbox">
+      Keep me signed in
+    </igx-checkbox>
+    <button igxButton="contained" type="button" [routerLink]="[`/master-view/my-tasks`]" class="button_1">
+      Sign in
+    </button>
+    <a class="ig-typography__body-2 hyperlink">
+      Forgot your account?
+    </a>
+    <button igxButton="outlined" type="button" [routerLink]="[`/login/create-account`]" class="button_1">
+      Create New Account
+    </button>
+  </div>
+</div>
